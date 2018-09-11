@@ -31,6 +31,7 @@ extension USTestTableViewController : UITableViewDataSource {
 
 extension USTestTableViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserHabit.setContentKey("셀 선택 번호", value: String(indexPath.row))
         let viewController : UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "USObjectViewController"))!
         self.navigationController?.pushViewController(viewController, animated: true);
     }
