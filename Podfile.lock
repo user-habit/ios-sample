@@ -1,0 +1,16 @@
+PODS:
+  - Userhabit (1.1.6)
+
+DEPENDENCIES:
+  - Userhabit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Userhabit
+
+SPEC CHECKSUMS:
+  Userhabit: c0ad5685040f518c6a3636cb07753a7b1c8620bb
+
+PODFILE CHECKSUM: a76237edef4c0415d92fe8ee72ad9e316afbcd1a
+
+COCOAPODS: 1.5.3
