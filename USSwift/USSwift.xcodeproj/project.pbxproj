@@ -14,9 +14,9 @@
 		670F22DF2146210D00D4194C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 670F22DD2146210D00D4194C /* LaunchScreen.storyboard */; };
 		670F22EA2146210D00D4194C /* USSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670F22E92146210D00D4194C /* USSwiftTests.swift */; };
 		670F22F52146210D00D4194C /* USSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670F22F42146210D00D4194C /* USSwiftUITests.swift */; };
-		670F23032146233E00D4194C /* USMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670F23022146233E00D4194C /* USMainViewController.swift */; };
-		670F23072146240600D4194C /* USTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670F23062146240600D4194C /* USTestTableViewController.swift */; };
-		670F230A2146260900D4194C /* USObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670F23092146260900D4194C /* USObjectViewController.swift */; };
+		67E7FC1E2148D30D0026828B /* USObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1B2148D30D0026828B /* USObjectViewController.swift */; };
+		67E7FC1F2148D30D0026828B /* USTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1C2148D30D0026828B /* USTestTableViewController.swift */; };
+		67E7FC202148D30D0026828B /* USMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1D2148D30D0026828B /* USMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +50,10 @@
 		670F22F02146210D00D4194C /* USSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		670F22F42146210D00D4194C /* USSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USSwiftUITests.swift; sourceTree = "<group>"; };
 		670F22F62146210D00D4194C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		670F23022146233E00D4194C /* USMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USMainViewController.swift; sourceTree = "<group>"; };
-		670F23062146240600D4194C /* USTestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USTestTableViewController.swift; sourceTree = "<group>"; };
-		670F23092146260900D4194C /* USObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USObjectViewController.swift; sourceTree = "<group>"; };
 		670F230B2147900500D4194C /* USSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		67E7FC1B2148D30D0026828B /* USObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USObjectViewController.swift; sourceTree = "<group>"; };
+		67E7FC1C2148D30D0026828B /* USTestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USTestTableViewController.swift; sourceTree = "<group>"; };
+		67E7FC1D2148D30D0026828B /* USMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USMainViewController.swift; sourceTree = "<group>"; };
 		A7528FCD3FC9A9A5CAA8D5A5 /* Pods-USSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USSwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-USSwift/Pods-USSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B87F23FEEB7EA61D79188BB9 /* Pods-USSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USSwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-USSwift/Pods-USSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +120,7 @@
 			children = (
 				670F22D42146210900D4194C /* AppDelegate.swift */,
 				670F230B2147900500D4194C /* USSwift-Bridging-Header.h */,
-				670F22D82146210900D4194C /* Main.storyboard */,
+				670F230D2148B0A700D4194C /* View */,
 				670F23042146234800D4194C /* Controller */,
 				670F22DB2146210D00D4194C /* Assets.xcassets */,
 				670F22DD2146210D00D4194C /* LaunchScreen.storyboard */,
@@ -150,26 +150,35 @@
 		670F23042146234800D4194C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				670F23052146235200D4194C /* ViewController */,
+				67E7FC192148D30D0026828B /* ViewController */,
 			);
 			name = Controller;
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		670F23052146235200D4194C /* ViewController */ = {
+		670F230D2148B0A700D4194C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				670F23022146233E00D4194C /* USMainViewController.swift */,
-				670F23062146240600D4194C /* USTestTableViewController.swift */,
-				670F2308214625F200D4194C /* Test */,
+				670F22D82146210900D4194C /* Main.storyboard */,
 			);
-			path = ViewController;
+			path = View;
 			sourceTree = "<group>";
 		};
-		670F2308214625F200D4194C /* Test */ = {
+		67E7FC192148D30D0026828B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				670F23092146260900D4194C /* USObjectViewController.swift */,
+				67E7FC1A2148D30D0026828B /* Test */,
+				67E7FC1C2148D30D0026828B /* USTestTableViewController.swift */,
+				67E7FC1D2148D30D0026828B /* USMainViewController.swift */,
+			);
+			name = ViewController;
+			path = USSwift/Controller/ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		67E7FC1A2148D30D0026828B /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				67E7FC1B2148D30D0026828B /* USObjectViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -336,9 +345,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				670F22D52146210900D4194C /* AppDelegate.swift in Sources */,
-				670F230A2146260900D4194C /* USObjectViewController.swift in Sources */,
-				670F23072146240600D4194C /* USTestTableViewController.swift in Sources */,
-				670F23032146233E00D4194C /* USMainViewController.swift in Sources */,
+				67E7FC202148D30D0026828B /* USMainViewController.swift in Sources */,
+				67E7FC1F2148D30D0026828B /* USTestTableViewController.swift in Sources */,
+				67E7FC1E2148D30D0026828B /* USObjectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
