@@ -17,6 +17,8 @@
 		67E7FC1E2148D30D0026828B /* USObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1B2148D30D0026828B /* USObjectViewController.swift */; };
 		67E7FC1F2148D30D0026828B /* USTestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1C2148D30D0026828B /* USTestTableViewController.swift */; };
 		67E7FC202148D30D0026828B /* USMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC1D2148D30D0026828B /* USMainViewController.swift */; };
+		67E7FC2221491D0A0026828B /* USScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC2121491D0A0026828B /* USScrollViewController.swift */; };
+		67E7FC24214A03CA0026828B /* USTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E7FC23214A03CA0026828B /* USTextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		67E7FC1B2148D30D0026828B /* USObjectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USObjectViewController.swift; sourceTree = "<group>"; };
 		67E7FC1C2148D30D0026828B /* USTestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USTestTableViewController.swift; sourceTree = "<group>"; };
 		67E7FC1D2148D30D0026828B /* USMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USMainViewController.swift; sourceTree = "<group>"; };
+		67E7FC2121491D0A0026828B /* USScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USScrollViewController.swift; sourceTree = "<group>"; };
+		67E7FC23214A03CA0026828B /* USTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USTextViewController.swift; sourceTree = "<group>"; };
 		A7528FCD3FC9A9A5CAA8D5A5 /* Pods-USSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USSwift.release.xcconfig"; path = "../Pods/Target Support Files/Pods-USSwift/Pods-USSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B87F23FEEB7EA61D79188BB9 /* Pods-USSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USSwift.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-USSwift/Pods-USSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				67E7FC1B2148D30D0026828B /* USObjectViewController.swift */,
+				67E7FC2121491D0A0026828B /* USScrollViewController.swift */,
+				67E7FC23214A03CA0026828B /* USTextViewController.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -344,10 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67E7FC2221491D0A0026828B /* USScrollViewController.swift in Sources */,
 				670F22D52146210900D4194C /* AppDelegate.swift in Sources */,
 				67E7FC202148D30D0026828B /* USMainViewController.swift in Sources */,
 				67E7FC1F2148D30D0026828B /* USTestTableViewController.swift in Sources */,
 				67E7FC1E2148D30D0026828B /* USObjectViewController.swift in Sources */,
+				67E7FC24214A03CA0026828B /* USTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
