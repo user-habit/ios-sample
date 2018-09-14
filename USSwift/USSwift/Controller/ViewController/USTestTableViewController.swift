@@ -11,7 +11,9 @@ import UIKit
 class USTestTableViewController: UIViewController {
     let testViewControllerArray : Array = ["USObjectViewController",
                                              "USScrollViewController",
-                                             "USTextViewController"];
+                                             "USTextViewController",
+                                             "USAlertViewController",
+                                             "USWKWebViewController"];
     override func viewDidLoad() {
         super.viewDidLoad()
     }
