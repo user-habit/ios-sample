@@ -9,8 +9,11 @@
 import UIKit
 
 class USTestTableViewController: UIViewController {
-    let testViewControllerArray : NSArray = ["USObjectViewController"];
-    
+    let testViewControllerArray : Array = ["USObjectViewController",
+                                             "USScrollViewController",
+                                             "USTextViewController",
+                                             "USAlertViewController",
+                                             "USWKWebViewController"];
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,7 +22,7 @@ class USTestTableViewController: UIViewController {
 extension USTestTableViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell")!;
-        cell.textLabel?.text = testViewControllerArray[indexPath.row] as? String;
+        cell.textLabel?.text = testViewControllerArray[indexPath.row]
         
         return cell;
     }
@@ -32,7 +35,9 @@ extension USTestTableViewController : UITableViewDataSource {
 extension USTestTableViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         UserHabit.setContentKey("셀 선택 번호", value: String(indexPath.row))
-        let viewController : UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "USObjectViewController"))!
-        self.navigationController?.pushViewController(viewController, animated: true);
+        
+        let viewControllerName : String = testViewControllerArray[indexPath.row]
+        let viewController : UIViewController! = self.storyboard?.instantiateViewController(withIdentifier:viewControllerName)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

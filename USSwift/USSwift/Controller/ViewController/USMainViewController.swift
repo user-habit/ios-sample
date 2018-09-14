@@ -1,4 +1,4 @@
-//
+    //
 //  USMainViewController.swift
 //  USSwift
 //
@@ -13,7 +13,7 @@ class USMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NSLog("%@", "Main View Controller did load");
+        print("Main View Controller did load");
     }
 
     override func didReceiveMemoryWarning() {

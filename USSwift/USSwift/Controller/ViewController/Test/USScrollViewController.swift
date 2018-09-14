@@ -1,20 +1,20 @@
 //
-//  USObjectViewController.swift
+//  USScrollViewController.swift
 //  USSwift
 //
-//  Created by lotco on 2018. 9. 10..
+//  Created by lotco on 2018. 9. 12..
 //  Copyright © 2018년 lotco. All rights reserved.
 //
 
 import UIKit
 
-class USObjectViewController: UIViewController {
+class USScrollViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
